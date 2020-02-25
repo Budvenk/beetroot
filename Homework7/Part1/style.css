@@ -1,0 +1,106 @@
+:root {
+  --light-ghrey: #4a4f56;
+  --dark-grey: #3b3f45;
+  --main-collor: #88839e;
+  --secondary-collor: #7a7593;
+  --hover-color: #625e77;
+  --pink: #eb7e7f;
+  --white: #ffffff;
+  --checked-color: ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: var(--grey);
+  padding: 24px;
+  text-align: center;
+}
+.title {
+  line-height: 1;
+  margin-bottom: 8px;
+  color: var(--pink);
+  font-size: 24px;
+}
+.subtitle {
+  line-height: 1;
+  color: var(--pink);
+  font-weight: 400;
+  font-size: 18px;
+}
+main {
+  background-color: var(--dark-grey);
+  flex-grow: 1;
+  padding: 48px;
+}
+.list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto 48px;
+  transition: all 0.2s ease-out;
+}
+.list__item:nth-child(odd) .item:not(:hover) {
+  background-color: var(--main-collor);
+}
+.list__item:nth-child(even) .item:not(:hover) {
+  background-color: var(--secondary-collor);
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.item__content {
+  color: var(--white);
+}
+.item:active {
+}
+.item:hover {
+  background-color: var(--hover-color);
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+}
+.item__name {
+  color: var(--white);
+  font-size: 22 px;
+}
+.item__description {
+  color: var(--white);
+}
+.item__description::after {
+  content: ")";
+}
+.item__description::before {
+  content: "(";
+}
+.item__input {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+.item__input:checked + .item__content {
+  text-decoration: line-through;
+  color: var(--checked-color);
+}
+.footer {
+  background-color: var(--grey);
+  padding: 20px;
+  text-align: center;
+  color: var(--pink);
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 800;
+  margin: 0;
+}
