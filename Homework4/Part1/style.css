@@ -1,103 +1,40 @@
-* {
+/* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-body {
-  background-color: #990909;
-  padding: 12px;
-  font-size: 18px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+}*/
 .header {
-  text-align: center;
-}
-.header__title {
-  margin-bottom: 8px;
-}
-.navigation {
-  width: 100%;
-  background: black;
-  padding: 24px 40px;
-}
-.navigation__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-.navigation__item {
-  flex: 1 1 calc(25%);
-}
-.navigation__item:not(:last-child) {
-  margin-right: 80px;
-}
-.navigation__image-wrapper {
-  text-align: center;
-  max-width: 300px;
-}
-.navigation__image {
-  height: auto;
-  max-width: 100%;
-}
-.navigation__image-description {
-  color: white;
-}
-.main {
-  display: flex;
-  flex: 1 1;
-}
-.link-navigation {
-  background-color: #7d0909;
-  flex: 0 0 220px;
-}
-.link-navigation__list {
-  list-style: none;
-}
-.link-navigation__item {
-  margin-bottom: 32px;
-}
-.link-navigation__link {
-  color: #d8450b;
-  font-weight: 700;
-}
-.article {
-  padding: 24px 0;
-}
-.article__text {
-  color: white;
-  margin-bottom: 24px;
-}
-.aside {
-  flex: 0 0 200px;
-  background-color: #e3dddd;
-}
-.aside__title {
-  background-color: #bdbdbd;
-  text-align: center;
+  font-weight: bold;
   font-size: 20px;
-  margin: 0;
+  background-color: #a52a2a;
+  text-align: center;
+  color: white;
 }
-.aside__text {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section {
+  font-size: 18px;
 }
-.devider {
-  display: block;
-  height: 1px;
-  width: 70%;
-  background-color: #acacac;
-  margin-bottom: 20px;
+.blue {
+  color: blue;
+}
+.list {
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: 325px;
+}
+.list__auto1,
+.list__auto2,
+.list__auto3,
+.list__auto4,
+.list__auto5 {
+  border-style: dashed;
+  border-width: 3px;
+  border-color: black;
+  display: inline-block;
+  margin: 2px;
 }
 .footer {
-  background-color: #e95b11;
-  margin-top: 24px;
-  text-align: center;
-}
-.footer__text {
+  background-color: black;
   font-size: 20px;
+  text-align: center;
   color: white;
 }

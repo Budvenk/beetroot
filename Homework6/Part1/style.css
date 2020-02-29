@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "proxima-nova", sans-serif;
+  cursor: pointer;
 }
 .ul {
   position: relative;
@@ -69,5 +70,5 @@
 .div__svg:hover {
   fill: var(--div-color);
   background-color: var(--white);
-  transition: 500ms;
+  transition: ease-in-out;
 }
