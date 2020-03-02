@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans+Condensed:300&display=swap");
+
+:root {
+  --main-color: #fdde7e;
+  --list-color: #ffffff;
+  --font-color: #02995b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+}
+
+.container__list {
+  padding: 80px 30px 79px 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container__list-item {
+  text-align: center;
+  background-color: var(--list-color);
+  width: 33%;
+  padding: 24px 90px;
+  cursor: pointer;
+}
+
+.container__list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.container__list-item:hover {
+  transform: scale(1.1);
+}
+.card__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.card__cost {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: "Open Sans Condensed";
+  color: var(--font-color);
+  margin-bottom: 17px;
+}
+.card__title {
+  font-size: 60px;
+  font-weight: 40px;
+  font-family: "Open Sans Condensed";
+  margin-bottom: 35px;
+}
+.card__text {
+  font-size: 35px;
+  font-family: "Lato";
+  width: 180px;
+}
