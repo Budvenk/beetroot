@@ -13,7 +13,7 @@
   text-align: center;
   font-family: sans-serif;
 }
-.question {
+.header__question {
   display: block;
   font-size: 12px;
   font-weight: 800;
@@ -24,7 +24,7 @@
   margin-top: 70px;
   color: var(--text-color);
 }
-.answer {
+.header__answer {
   display: block;
   font-size: 48px;
   font-weight: 400;
@@ -34,7 +34,7 @@
   margin-bottom: 30px;
   color: var(--main-color);
 }
-.description {
+.header__description {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -74,10 +74,9 @@
   flex-direction: column;
   min-height: 48px;
 }
-.list__title-max {
+.list__title--max {
   width: max-content;
 }
-
 .list__text {
   font-size: 14px;
   font-weight: 400;
